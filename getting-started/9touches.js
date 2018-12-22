@@ -30,7 +30,7 @@ export default class ButtonBasics extends Component {
           <Button
             onPress={this._onPressButton}
             title="OK!"
-            color="#841584b"
+            color="#841584"
           />
         </View>
       </View>
@@ -42,9 +42,13 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
+    // alignItems: 'stretch'
   },
   buttonContainer: {
-    margin: 20
+    margin: 20,
+    borderRadius: 4,
+    borderWidth: 1,
+    borderColor: 'blue'
   },
   alternativeLayoutButtonContainer: {
     margin: 20,
