@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {FlatList, AppRegistry, StyleSheet, View, Text, Image, TouchableHighlight, TouchableOpacity, Alert} from 'react-native';
+import {FlatList, AppRegistry, StyleSheet, View, Text, Image, TouchableHighlight, TouchableOpacity, TouchableNativeFeedback, Platform, Alert} from 'react-native';
 
 export default class TestFlatList extends Component{
   _onPressCard(text){
@@ -31,6 +31,17 @@ export default class TestFlatList extends Component{
                 <Text style={styles.titleCard}>{item.title}</Text>
               </View>
             </TouchableOpacity>
+          }
+        />
+        <FlatList data={card}
+          showsVerticalScrollIndicator={false}
+          renderItem={({item}) =>
+            <TouchableNativeFeedback background={Platform.OS === 'android' ? TouchableNativeFeedback.SelectableBackground() : ''}>
+              <View style={styles.card}>
+                <Image source={{uri: item.uri}} style={styles.imageCard}/>
+                <Text style={styles.titleCard}>{item.title}</Text>
+              </View>
+            </TouchableNativeFeedback>
           }
         />
       </View>
