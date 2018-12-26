@@ -7,8 +7,8 @@ export default class AlignItemsBasics extends Component{
       <View style={{
         flex: 1,
         flexDirection: 'row',
-        justifyContent: 'flex-end',
-        alignItems: 'flex-start',
+        justifyContent: 'flex-end', // flex-end|flex-start|space-between
+        alignItems: 'flex-start', // flex-end|flex-start|center
       }}>
         <View style={{height: 50, width: 50, backgroundColor: 'powderblue'}}/>
         <View style={{height: 50, backgroundColor: 'skyblue'}}/>
