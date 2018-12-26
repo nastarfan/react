@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "nastarfan",
-    "slug": "nastarfan",
+    "name": "My React App",
+    "slug": "prop",
     "privacy": "public",
     "sdkVersion": "31.0.0",
     "platforms": [
@@ -25,6 +25,8 @@
     "ios": {
       "supportsTablet": true
     },
-    "description": ""
+    "android": {
+      "package": "company.aasabri.reacttest"
+    }
   }
 }

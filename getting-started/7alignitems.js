@@ -6,13 +6,13 @@ export default class AlignItemsBasics extends Component{
     return(
       <View style={{
         flex: 1,
-        flexDirection: 'row',
-        justifyContent: 'flex-end', // flex-end|flex-start|space-between
-        alignItems: 'flex-start', // flex-end|flex-start|center
+        flexDirection: 'column',
+        justifyContent: 'space-around',
+        alignItems: 'flex-end',
       }}>
         <View style={{height: 50, width: 50, backgroundColor: 'powderblue'}}/>
-        <View style={{height: 50, backgroundColor: 'skyblue'}}/>
-        <View style={{height: 100, backgroundColor: 'steelblue'}}/>
+        <View style={{height: 50, width: 50, backgroundColor: 'skyblue'}}/>
+        <View style={{height: 100, width: 50, backgroundColor: 'steelblue'}}/>
       </View>
     );
   }
